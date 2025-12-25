@@ -1,0 +1,85 @@
+---
+alwaysApply: true
+---
+
+      You have extensive expertise in Vue 3, Node.js, Vite, Vue Router, Pinia, VueUse, and Tailwind CSS. You possess a deep knowledge of best practices and performance optimization techniques across these technologies.
+
+      Code Style and Structure
+      - Write clean, maintainable, and technically accurate TypeScript code.
+      - Prioritize functional and declarative programming patterns; avoid using classes.
+      - Emphasize iteration and modularization to follow DRY principles and minimize code duplication.
+      - Prefer Composition API <script setup> style.
+      - Use Composables to encapsulate and share reusable client-side logic or state across multiple components in your Nuxt application.
+
+      Fetching Data
+      1. Use axios that is in /src/plugins/axios/index.js, so just import axosInstance and use axios
+      2. Always try to call the server using pinia, and never get data directly from component
+      3. Try to write method in pinia store using axiosInstance to fetch data
+      4. When you get data from the database try to always tak care thet return from that method can be used as .then so response can be used from component.
+
+      Naming Conventions
+      - Utilize composables, naming them as use<MyComposable>.
+      - Use **PascalCase** for component file names (e.g., components/MyComponent.vue).
+      - Favor named exports for functions to maintain consistency and readability.
+      - ALways use VueFinalModal to open modal, never ever write your own modal logic.
+      - When you use modal alway use it programitacly like this:
+
+      const { open, close } = useModal({
+        component: CreateCompany,
+        attrs: {
+            data: {
+            },
+            onConfirm(data) {
+            companyStore.getCompanies()
+            close()
+            }
+        }
+        })
+
+      - For confirmation always use MainConfirmationDialog
+
+      UI and Styling
+      - Use Nuxt UI and Tailwind CSS for components and styling.
+      - Implement responsive design with Tailwind CSS; use a mobile-first approach.
+      - everything has to be responsive even modals, when you have to open modal on the phone then always use full width and height for modal size when it is mobile.
+
+      Components:
+
+      - Always try to make new component, but always don't write html just in one component, if you have to make new card then that means new component.
+      - Even for small things always make new file and new component
+      - Try to make reusable code, try to use composables wheever you can
+      - Try always to make component as much reusbale as it can be even colors even statuses even everything can be customizable.
+      - Use class-variance-authority to make different versions of car or colors or anything:
+
+      const buttonClass = computed(() => {
+        return cva('inline-flex items-center justify-center text-white text-sm rounded min-h-[32px] px-5 py-0.5 bg-black hover:bg-gray-800', {
+            variants: {
+            intent: {
+                primary: 'bg-yellow-main hover:bg-yellow-peach',
+                secondary: 'bg-red-main hover:bg-red-light',
+                danger: 'bg-red-500 hover:bg-red-600',
+                success: 'bg-green-600 hover:bg-green-700',
+                blueDark: 'bg-blue-dark hover:bg-surface-900',
+                text: 'bg-transparent hover:bg-gray-200 text-black',
+                gray: 'bg-gray-400 hover:bg-gray-200 text-black',
+                empty: '!text-gray-400 hover:!text-black bg-transparent hover:bg-transparent border border-2 border-gray-300 hover:border-gray-400 transition-all',
+                blank: 'px-2.5 py-[5px]rounded-[3px] bg-transparent border-[0.7px] border-[#e9e2db] !text-xs !text-center !text-white/70 hover:!bg-yellow-main transition-all',
+            },
+            disabled: {
+                true: '!bg-gray-200 !text-gray-400 cursor-not-allowed',
+                false: ''
+            },
+            size: {
+                sm: '!px-1 !min-h-[3px] !text-[9px] !h-[23px]',
+                md: '!px-3 !min-h-[28px] !text-[10px] !h-[28px]',
+                l: '!px-5 !min-h-[32px] !text-sm',
+                xl: '!px-6 !min-h-[36px] !text-md',
+                '2xl': '!px-7 !min-h-[40px] !text-xl'
+            },
+            }
+        })({
+            intent: props.intent,
+            disabled: props.disabled,
+            size: props.size
+        })
+        })

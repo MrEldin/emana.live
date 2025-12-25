@@ -1,0 +1,95 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "./primevue/tailwind.css";
+@import "tailwindcss/utilities";
+@import "./base.css";
+
+@layer base {
+    .number {
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
+
+@layer utilities {
+    .rotate-x {
+        transform: rotate(45deg);
+    }
+    .border-thin {
+        border-width: 0.4px;
+    }
+}
+
+.custom-quill-container {
+    min-height: 160px;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.quill-container {
+    min-height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.p-dialog-mask {
+    @apply fixed inset-0 bg-black bg-opacity-50 z-50;
+}
+
+/* Universal checkbox checkmark - should work for any structure */
+input[type="checkbox"]:checked + *,
+input[type="checkbox"]:checked ~ *,
+input[type="checkbox"]:checked + * + *,
+input[type="checkbox"]:checked ~ * * {
+    position: relative;
+}
+
+input[type="checkbox"]:checked + *::after,
+input[type="checkbox"]:checked ~ *::after,
+input[type="checkbox"]:checked + * + *::after {
+    content: '✓' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    color: white !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    z-index: 999 !important;
+    display: block !important;
+    pointer-events: none !important;
+}
+
+/* Comprehensive FormKit checkbox checkmark fix */
+[data-type="checkbox"] input[type="checkbox"]:checked + * {
+    position: relative;
+}
+
+[data-type="checkbox"] input[type="checkbox"]:checked + *::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    z-index: 999;
+    display: block;
+}
+
+/* Fallback selectors */
+.formkit-checkbox input:checked + .formkit-decorator::after,
+.formkit-wrapper input:checked + *::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    z-index: 999;
+    display: block;
+}
