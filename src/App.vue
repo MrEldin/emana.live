@@ -1,6 +1,7 @@
 <template>
     <component :is="layout || 'div'">
         <router-view />
+        
     </component>
 </template>
 
@@ -9,10 +10,12 @@
     import layouts from './layouts'
     import router from './router'
     import { ModalsContainer } from 'vue-final-modal'
+    
 
     export default {
       components: {
         ModalsContainer,
+        
       },
         setup() {
             const layout = shallowRef('div')

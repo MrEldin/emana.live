@@ -1,6 +1,7 @@
 import PrimeUI from 'tailwindcss-primeui';
 
 export default {
+    darkMode: 'class',
     content: [
         "./formkit.theme.mjs",
         "./index.html",
@@ -48,7 +49,7 @@ export default {
                 },
                 beige: {
                     DEFAULT: '#FAF7EA',
-                }
+                },
             }
         },
     },

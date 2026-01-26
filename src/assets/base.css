@@ -65,3 +65,10 @@
         --p-text-hover-muted-color: var(--p-surface-300); /* #d4d4d8 */
     }
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+

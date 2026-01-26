@@ -92,4 +92,4 @@ input[type="checkbox"]:checked + * + *::after {
     font-weight: bold;
     z-index: 999;
     display: block;
-}
+} 
