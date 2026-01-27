@@ -22,7 +22,7 @@
                         <p class="text-[#047857] text-[10px]" >{{ fourthButtonText }}</p>
                     </button>
                 </div>
-                <div class="w-full md:w-[439.33px] mt-4"> 
+                <div class="w-full md:w-[439.33px] my-4"> 
                     <h3 class="font-semibold text-[18px] text-[#18181B] dark:text-[#F9FAFB]">{{ header }}</h3>
                     <p class="whitespace-pre-line pt-2 text-[12px] text-[#71717A] dark:text-[#D1D5DB] md:h-[100px]">{{ description }}</p>
                 </div>

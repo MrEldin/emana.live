@@ -1,25 +1,25 @@
 <template>
-    <section id="Hero" class="hero bg-white dark:bg-[#111827] overflow-hidden relative scroll-mt-16">
+    <section id="Hero" class="hero bg-white dark:bg-[#111827] overflow-hidden relative scroll-mt-16 pb-10">
         <div class="max-w-7xl mx-auto px-6  rounded-xl  relative"> 
 
             <div class="absolute inset-0 pointer-events-none">
-                 <div class="absolute w-[160px] h-[160px] bg-green-300/30 dark:bg-green-900/30 rounded-full  -left-16 top-16 blur-md z-20"></div>
+                 <div class="absolute w-[160px] h-[160px] bg-green-300/30 dark:bg-green-900/30 rounded-full  -left-16 top-20 blur-md z-20"></div>
                  <div class="absolute w-[500px] h-[500px] bg-purple-300/30 dark:bg-purple-900/30 rounded-full  left-2 top-2 blur-2xl"></div> 
                  <div class="absolute w-[500px] h-[500px] bg-green-300/30 dark:bg-green-900/30 rounded-full  -right-24 top-2 blur-2xl"></div>
                 
             </div>
              
-            <div class="flex md:flex-row flex-col-reverse items-center justify-between md:gap-[200px] gap-10 relative pt-20 z-10"> 
+            <div class="flex lg:flex-row flex-col-reverse items-center md:justify-between lg:gap-[200px] gap-20 relative pt-2 lg:pt-20  z-30"> 
 
-                <div class="max-w-2xl flex flex-col items-center md:items-start">
+                <div class="max-w-2xl lg:pt-28  flex flex-col items-center lg:items-start dark:opacity-70">
                     <div> 
-                        <div class="max-w-[150px] p-1 border bg-white dark:bg-[1F2937] bg-[blur] border-r-[#A7F3D0]">
-                            <p id="text" class="max-w-[180.03px] font-family text-[#047857] dark:text-[#047859]">> initializing_profile...</p>
+                        <div class="max-w-[150px] p-1 border bg-white bg-opacity-50 dark:bg-[1F2937] bg-[blur] border-r-[#A7F3D0]">
+                            <p id="text" class="max-w-[180.03px] font-family text-[#047857] dark:text-emerald-800 text-lg">> initializing_profile...</p>
                         </div>
-                        <div class="md:max-w-[842.66px] max-w-sm my-4 flex flex-col md:text-start text-center gap-4"> 
+                        <div class="md:max-w-[842.66px] max-w-sm my-4 flex flex-col lg:text-start text-center gap-4"> 
 
                              
-                                <h1 class="md:text-4xl text-2xl font-semibold  text-[#18181B] dark:text-[#F9FAFB] md:mr-[300px]">
+                                <h1 class="lg:text-5xl md:text-4xl text-2xl font-semibold  text-[#18181B] dark:text-[#F9FAFB] lg:mr-[200px]">
                                     Hello, I'm
                                 
                                     <mixed-text>Emana.</mixed-text>
@@ -44,7 +44,7 @@
                         </button>
                     </div>
 
-                    <div class="mt-16 bg-[#fff] dark:bg-[#111827] shadow-lg w-full rounded-lg text-[12px] p-6"> 
+                    <div class="mt-10 bg-[#fff] dark:bg-[#111827] shadow-lg w-full rounded-lg text-[12px] p-6"> 
                         <div class="flex flex-row gap-2 border-b-[2px] border-b-[#F4F4F5] dark:border-b-[#374151] pb-2 mb-2">
                             <div class="bg-[#F87171] rounded-full w-[10px] h-[10px]"></div>
                             <div class="bg-[#FACC15] rounded-full w-[10px]"></div>
@@ -67,8 +67,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="rounded-lg overflow-hidden shadow-md dark:shadow-none mt-20">
-                    <img src="@/assets/Hero-img.png" alt="Hero Image">
+                <div class="rounded-lg overflow-hidden shadow-lg shadow-blue-300 dark:shadow-blue-800 md:mt-20 dark:opacity-85">
+                    <img src="@/assets/hero emana.PNG" title="Hero Image" class="w-[483px]"/>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@ const downloadCV = () => {
 
 const viewProfile = () => {
     const link = document.createElement('a');
-    link.href = 'https://github.com/dashboard'; // Replace with the actual GitHub profile URL
+    link.href = 'https://github.com/emana9'; // Replace with the actual GitHub profile URL
     link.target = '_blank';
     link.click();
 }

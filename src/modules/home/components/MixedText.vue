@@ -1,5 +1,5 @@
 <template>
-    <span class="bg-gradient-to-r bg-clip-text text-transparent font-semibold md:text-4xl text-2xl" :class="gradient">
+    <span class="bg-gradient-to-r bg-clip-text text-transparent font-semibold lg:text-5xl md:text-4xl text-2xl" :class="gradient">
         <slot />
     </span>
 </template>

@@ -5,8 +5,8 @@
 
             <div class="pt-1 bg-gradient-to-r from-green-500 via-purple-500 to-blue-500 rounded-xl"> 
                 
-            <div class="flex md:flex-row flex-col gap-4 rounded-xl shadow-xl p-8 dark:bg-[#0F172A] bg-gradient-to-br from-white via-white to-purple-100"> 
-                <div> 
+            <div class="flex md:flex-row flex-col gap-4 rounded-xl shadow-xl  p-8 bg-gradient-to-br from-white via-white to-purple-100 dark:bg-none dark:bg-[#0F172A]"> 
+                <div class="dark:opacity-70"> 
                     <button class="bg-[#F3E8FF] dark:bg-[#111827] rounded-xl flex flex-row gap-2 items-center p-2 mb-4">
                         <img src="@/assets/featured.png" />
                         <span class="text-[#9333EA] text-[12px]">FEATURED EXPERIENCE</span>

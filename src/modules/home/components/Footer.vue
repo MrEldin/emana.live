@@ -2,7 +2,7 @@
 
 <template>
     <section id="Contact" class="scroll-mt-16 dark:bg-[#111827] pt-20"> 
-        <div class="max-w-7xl mx-auto px-6 pb-10 "> 
+        <div class="max-w-7xl mx-auto px-6 pb-10 dark:opacity-70 "> 
             <div class="flex flex-col gap-6">
                 <!-- Contact Section -->
                 <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-4">
@@ -29,7 +29,7 @@
                 </div>
                 
                 <div class="text-center md:text-left"> 
-                    <p class="text-[#71717A] dark:text-[#D1D5DB] text-[14px]">Emana Mujovic | System v2.4</p>
+                    <p class="text-[#71717A] dark:text-[#D1D5DB] text-[14px]">Emana Mujovic | emana.me</p>
                 </div>
                 <p class="text-[#A1A1AA] dark:text-[#9CA3AF] text-[12px] text-center">//Hand-coded with Tailwind CSS. AI - Enhanced.</p>
             </div>
@@ -40,7 +40,7 @@
 <script setup>
 
 const email = 'emana.agovic@gmail.com' // Zameni sa svojim emailom
-const github = 'https://github.com/dashboard' // Zameni sa svojim GitHub profilom
+const github = 'https://github.com/emana9' // Zameni sa svojim GitHub profilom
 const linkedin = 'https://www.linkedin.com/in/emana-agovi%C4%87-mujovi%C4%87-1085341a6/' // Zameni sa svojim LinkedIn profilom
 const portfolio = 'https://yourportfolio.com' // Zameni sa svojim portfolio sajtom (opciono)
 

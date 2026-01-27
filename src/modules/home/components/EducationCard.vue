@@ -6,8 +6,8 @@
         </div>
 
          
-            <div class="border-l-[#D7D7D7] dark:border-l-[#374151] border-l-2 pl-6 md:h-[143px] mt-6 relative  "> 
-                <div class="rounded-xl md:h-[143px] flex flex-col gap-2 p-6 shadow-sm bg-white dark:bg-[#111827] bg-opacity-[60%] md:w-[600px]">
+            <div class="border-l-[#D7D7D7] dark:border-l-[#374151] border-l-2 pl-6 lg:h-[143px] mt-6 relative  "> 
+                <div class="rounded-xl lg:h-[143px] flex flex-col gap-2  p-6 shadow-sm bg-white dark:bg-[#111827] bg-opacity-[60%] lg:w-[600px]">
                     <div class="flex justify-between"> 
 
                         <h3 class="text-[#18181B] dark:text-[#9CA3AF] text-[16px] font-semibold">{{ header }}</h3>
@@ -18,10 +18,10 @@
                     <div v-for="( s, i) in sections" :key="i"> 
 
                         
-                        <p class="text-[#18181B] dark:text-[#9CA3AF] text-[12px]">{{ s.subtitle }}</p>
+                        <p class="text-[#18181B] dark:text-[#9CA3AF] text-[6px] lg:text-[12px]">{{ s.subtitle }}</p>
                         
                     </div>
-                    <p class="text-[#18181B] dark:text-[#9CA3AF] text-[12px] whitespace-pre-line">{{ text }}</p>
+                    <p class="text-[#18181B] dark:text-[#9CA3AF] text-[6px] lg:text-[12px] whitespace-pre-line">{{ text }}</p>
                     
                 </div>
 

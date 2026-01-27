@@ -4,7 +4,7 @@
         <div class="max-w-7xl mx-auto px-6 "> 
 
             
-            <div class="mt-20 flex flex-col items-center md:items-start"> 
+            <div class="mt-20 flex flex-col items-center lg:items-start"> 
             <div class="absolute inset-0">
                 <div class="absolute w-[500px] h-[600px] bg-blue-200/30 dark:bg-blue-900/30 rounded-full  left-6 -top-16 blur-2xl"></div>
             </div>
@@ -16,7 +16,7 @@
                 </TitleBlock>
             
 
-            <div class="flex md:flex-row flex-col gap-6" > 
+            <div class="flex lg:flex-row flex-col gap-6" > 
 
                 <div class="flex flex-col gap-[2px]" > 
                     

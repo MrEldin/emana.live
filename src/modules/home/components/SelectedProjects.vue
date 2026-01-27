@@ -1,6 +1,6 @@
 <template>
     <section id="SelectedProjects" class=" pt-20 relative dark:bg-[#111827] scroll-mt-16"> 
-        <div class="max-w-7xl mx-auto px-6"> 
+        <div class="max-w-7xl mx-auto px-6 dark:opacity-70"> 
 
             <div class="absolute inset-0 pointer-events-none">
                 <div class="absolute w-[500px] h-[500px] bg-orange-200/30 dark:bg-orange-900/30 rounded-full  -left-16 top-4 blur-2xl z-20"></div>
@@ -9,7 +9,7 @@
                 
             </div>
             
-            <div class="flex flex-col items-center md:items-start"> 
+            <div class="flex flex-col items-center lg:items-start"> 
                 <TitleBlock 
                 :img-src="picture"
                 header="Selected Projects" 
@@ -18,7 +18,7 @@
 
             
 
-            <div class="flex md:flex-row flex-col gap-4 mt-10"> 
+            <div class="flex lg:flex-row flex-col gap-4 mt-10"> 
                 <!-- Project Cards Here -->
                 <SelectedProjectsCard v-for="project in projects.slice(0, 2)" :key="project.id" v-bind="project"> 
                     
@@ -35,7 +35,7 @@
                 <p class="text-[#71717A] text-[14px] uppercase">Other Professional Experience</p>
             </div>
             
-            <div class=" pt-4 flex md:flex-row flex-col gap-4"> 
+            <div class=" pt-4 flex lg:flex-row flex-col gap-4"> 
                 <!-- Project Cards Here -->
                 <SelectedProjectsCard v-for="project in projects2" :key="project.id" v-bind="project" :show-buttons="false">
                      

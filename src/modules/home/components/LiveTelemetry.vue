@@ -1,6 +1,6 @@
 <template>
     <section id="LiveTelemetry" class="relative dark:bg-[#111827] scroll-mt-16 pt-10"> 
-        <div class="max-w-7xl mx-auto px-6"> 
+        <div class="max-w-7xl mx-auto px-6 dark:opacity-70"> 
 
             <div> 
                 
@@ -14,7 +14,7 @@
             
         <div class="mt-20"> 
 
-            <div class="flex flex-col items-center md:items-start"> 
+            <div class="flex flex-col items-center lg:items-start"> 
 
                 <TitleBlock  
                 :img-src="picture"
