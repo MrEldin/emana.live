@@ -5,14 +5,14 @@
 
             <div class="pt-1 bg-gradient-to-r from-green-500 via-purple-500 to-blue-500 rounded-xl"> 
                 
-            <div class="flex flex-row gap-4 rounded-xl shadow-xl p-8 dark:bg-[#0F172A] bg-gradient-to-br from-white via-white to-purple-100"> 
+            <div class="flex md:flex-row flex-col gap-4 rounded-xl shadow-xl p-8 dark:bg-[#0F172A] bg-gradient-to-br from-white via-white to-purple-100"> 
                 <div> 
                     <button class="bg-[#F3E8FF] dark:bg-[#111827] rounded-xl flex flex-row gap-2 items-center p-2 mb-4">
                         <img src="@/assets/featured.png" />
                         <span class="text-[#9333EA] text-[12px]">FEATURED EXPERIENCE</span>
                     </button>
-                    <h3 class="text-[#18181B] dark:text-[#E5E7EB] text-[30px] font-semibold">Neural Interface Dashboard</h3>
-                    <p class="text-[#71717A] dark:text-[#9CA3AF] text-[16px]">A personal project exploring the intersection of data visualization and generative AI. Built with Vue.js and Tailwind CSS to create dynamic, personalized user interfaces generated in real-time.</p>
+                    <h3 class="text-[#18181B] dark:text-[#E5E7EB] text-[30px] font-semibold text-center md:text-left">Neural Interface Dashboard</h3>
+                    <p class="text-[#71717A] dark:text-[#9CA3AF] text-[16px] text-center md:text-left">A personal project exploring the intersection of data visualization and generative AI. Built with Vue.js and Tailwind CSS to create dynamic, personalized user interfaces generated in real-time.</p>
                     <div class="mt-6"> 
                         <div class="flex flex-row gap-4 items-center"> 
                             <img src="@/assets/green-mark.png" alt=""/>

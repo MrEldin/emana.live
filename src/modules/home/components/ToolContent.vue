@@ -1,5 +1,5 @@
-<template > 
-            <div class="w-[256px] mx-auto my-10  bg-white rounded-lg border-[#E4E4E7] flex flex-col gap-2 items-center justify-center"> 
+        <template > 
+                    <div class="w-full max-w-[256px] mx-auto my-10  bg-white dark:bg-[#1F2937] rounded-lg border-[#E4E4E7] dark:border-[#374151] flex flex-col gap-2 items-center justify-center"> 
                             <div class="flex flex-row gap-1 h-[32px]"> 
                                 <div class="rounded-full bg-[#F3E8FF] pt-1"> 
                                     <i class="lm lm-clock text-[#9333EA] w-[18px] h-[18px] m-2"></i>

@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 
-                <div class="flex flex-row justify-between items-center"> 
+                <div class="text-center md:text-left"> 
                     <p class="text-[#71717A] dark:text-[#D1D5DB] text-[14px]">Emana Mujovic | System v2.4</p>
                 </div>
                 <p class="text-[#A1A1AA] dark:text-[#9CA3AF] text-[12px] text-center">//Hand-coded with Tailwind CSS. AI - Enhanced.</p>

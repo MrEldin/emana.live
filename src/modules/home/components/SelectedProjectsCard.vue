@@ -1,13 +1,13 @@
 <template> 
-    <div class="rounded-lg border-2 dark:border-[#374151] !h-[440.25px] "> 
-        <div class="bg-[#F4F4F5] dark:bg-[#1F2937]  h-[192px] pt-6 overflow-hidden"> 
+    <div class="rounded-lg border-2 dark:border-[#374151] !md:h-[440.25px] "> 
+        <div class="bg-[#F4F4F5] dark:bg-[#1F2937]  md:h-[192px] pt-6 overflow-hidden"> 
             
             <slot />  
         </div>
 
         
 
-        <div class="px-4 h-[246.25px]">
+        <div class="px-4 md:h-[246.25px]">
                 <div v-if="showButtons" class="flex flex-row gap-2 mt-6"> 
                     <button v-if="firstButtonText" class="bg-[#F4F4F5] dark:bg-[#1F2937] p-1 border dark:border-[#374151] rounded-md"> 
                         <p class="text-[#52525B] text-[10px]">{{ firstButtonText }}</p>
@@ -22,9 +22,9 @@
                         <p class="text-[#047857] text-[10px]" >{{ fourthButtonText }}</p>
                     </button>
                 </div>
-                <div class="w-[439.33px] mt-4"> 
+                <div class="w-full md:w-[439.33px] mt-4"> 
                     <h3 class="font-semibold text-[18px] text-[#18181B] dark:text-[#F9FAFB]">{{ header }}</h3>
-                    <p class="whitespace-pre-line pt-2 text-[12px] text-[#71717A] dark:text-[#D1D5DB] h-[100px]">{{ description }}</p>
+                    <p class="whitespace-pre-line pt-2 text-[12px] text-[#71717A] dark:text-[#D1D5DB] md:h-[100px]">{{ description }}</p>
                 </div>
                 <div v-if="showButtons" class="flex flex-row gap-2 text-[12px] text-[#52525B] dark:text-[#D1D5DB] mt-4 mb-4    "> 
                     

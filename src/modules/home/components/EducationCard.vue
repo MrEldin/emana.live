@@ -6,8 +6,8 @@
         </div>
 
          
-            <div class="border-l-[#D7D7D7] dark:border-l-[#374151] border-l-2 pl-6 h-[143px] mt-6 relative  "> 
-                <div class="rounded-xl h-[143px] flex flex-col gap-2 p-6 shadow-sm bg-white dark:bg-[#111827] bg-opacity-[60%] w-[600px]">
+            <div class="border-l-[#D7D7D7] dark:border-l-[#374151] border-l-2 pl-6 md:h-[143px] mt-6 relative  "> 
+                <div class="rounded-xl md:h-[143px] flex flex-col gap-2 p-6 shadow-sm bg-white dark:bg-[#111827] bg-opacity-[60%] md:w-[600px]">
                     <div class="flex justify-between"> 
 
                         <h3 class="text-[#18181B] dark:text-[#9CA3AF] text-[16px] font-semibold">{{ header }}</h3>

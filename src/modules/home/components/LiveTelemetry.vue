@@ -23,7 +23,7 @@
             </TitleBlock>
         </div>
         
-        <div class="mt-8 grid grid-cols-3 gap-6"> 
+        <div class="mt-8 md:grid md:grid-cols-3 gap-6 flex flex-col"> 
             
             
             
