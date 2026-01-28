@@ -81,7 +81,7 @@ import MixedText from './MixedText.vue';
 
 const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/Emana_Mujović_CV.pdf'; // Fajl iz public foldera
+    link.href = '/emana_cv.pdf'; // Fajl iz public foldera
     link.download = 'Emana_Mujovic_CV.pdf'; 
     link.click();
 }
